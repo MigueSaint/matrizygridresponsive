@@ -1,0 +1,107 @@
+$gutter: 0.5rem;
+
+.matriz1 {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    margin: 0; 
+    background-color: #001f3f; 
+    color: white; 
+    padding: 20px;
+    }
+
+.title-container {
+    text-align: center;
+    margin-top: 50px; 
+    padding-bottom: 20px; 
+  }
+
+.title {
+    color: white; 
+    font-size: 3rem; 
+    font-weight: bold;
+    text-align: center; 
+  }
+
+.col{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: $gutter;
+  } 
+
+.col-3{
+    flex: 0 0 auto;
+    padding: $gutter;
+    width: 33.3333%;
+  }
+
+.col-4{
+    flex: 0 0 auto;
+    padding: $gutter;
+    width: 25%;
+    
+  }
+
+.col-5{
+    flex: 0 0 auto;
+    padding: $gutter;
+    width: 20%;
+  }
+
+.col-6{
+    flex: 0 0 auto;
+    padding: $gutter;
+    width: 16.6667%;
+  }
+
+.col-fixed{
+    flex: 0 0 auto;
+    padding: $gutter;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+  }
+  
+  .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: #3fafb3; 
+    height: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .border-round-sm {
+    border-radius: 0.5rem;
+  }
+  
+  .button-container {
+    display: flex; 
+    justify-content: left; 
+    width: 100%; 
+  }
+
+  .btn {
+    margin: 10px; 
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #ff4500; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      background-color: #ff6347; 
+      transform: scale(1.05); 
+    }
+  }

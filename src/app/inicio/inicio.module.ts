@@ -8,7 +8,8 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { MultiSelectModule } from 'primeng/multiselect';
-
+import { ToolbarModule } from 'primeng/toolbar';
+import { InputTextModule } from 'primeng/inputtext';
 
 import { InicioRoutingModule } from './inicio-routing.module';
 import { MenuTareasComponent } from './menu-tareas/menu-tareas.component';
@@ -26,7 +27,9 @@ import { PagWebComponent } from './pag-web/pag-web.component';
     Matriz2Component,
     FormsComponent,
     GaleriaComponent,
-    PagWebComponent,
+    PagWebComponent
+
+    
         
   ],
   imports: [
@@ -38,6 +41,8 @@ import { PagWebComponent } from './pag-web/pag-web.component';
     SplitButtonModule,
     ToastModule,
     MultiSelectModule,
+    ToolbarModule,
+    InputTextModule
   
   ],
   providers:[

@@ -7,6 +7,7 @@ import { Matriz2Component } from './matriz2/matriz2.component';
 import { BotonesComponent } from './botones/botones.component';
 import { FormsComponent } from './forms/forms.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { PagWebComponent } from './pag-web/pag-web.component';
 
 const routes: Routes = [
   
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: "matriz2", component: Matriz2Component },
   { path: "forms", component: FormsComponent },
   { path: "galeria", component: GaleriaComponent },
+  { path: "paginaweb", component: PagWebComponent },
   { path: 'cards', loadComponent:()=>import('./cards/cards.component').then((m) => m.CardsComponent), },
   { path: "botones", loadComponent:()=>import('./botones/botones.component').then((m) => m.BotonesComponent), },
   { path: "", redirectTo: '../inicio/menu-tareas', pathMatch: 'full' }

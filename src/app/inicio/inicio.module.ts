@@ -16,6 +16,7 @@ import { Matriz1Component } from './matriz1/matriz1.component';
 import { Matriz2Component } from './matriz2/matriz2.component';
 import { FormsComponent } from './forms/forms.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { PagWebComponent } from './pag-web/pag-web.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
     Matriz2Component,
     FormsComponent,
     GaleriaComponent,
+    PagWebComponent,
         
   ],
   imports: [

@@ -1,0 +1,84 @@
+<div class="menu_botones">
+    <div class="title-container title">Botones</div>
+  
+    <div class="text_center"><h2>Ejemplos Button</h2></div>
+    <div class="card flex justify-center gap-4">
+      <p-button
+        label="Search"
+        icon="pi pi-check"
+        [loading]="loading"
+        (onClick)="load()"
+      />
+      <div class="card flex justify-center">
+        <p-button label="Submit" [disabled]="true" />
+      </div>
+      <div class="card flex justify-center flex-wrap gap-4">
+        <p-button label="Emails" badge="2" styleClass="m-0" />
+        <p-button
+          label="Messages"
+          icon="pi pi-users"
+          badge="2"
+          badgeSeverity="contrast"
+          styleClass="m-0"
+          [outlined]="true"
+        />
+      </div>
+      <div class="card flex justify-center">
+        <div class="card flex flex-wrap gap-4 justify-center">
+          <p-button label="Success" variant="outlined" severity="success" />
+          <p-button label="Help" variant="outlined" severity="help" />
+          <p-button label="Danger" variant="outlined" severity="danger" />
+        </div>
+      </div>
+    </div>
+  
+    <p></p>
+    <div class="text_center"><h2>Ejemplos SplitButton</h2></div>
+  
+    <div class="card flex justify-content-center">
+      <p-toast></p-toast>
+  
+      <p-splitButton
+        label="Save"
+        icon="pi pi-check"
+        [model]="splitButtonItems"
+        (onClick)="save('success')"
+      ></p-splitButton>
+    </div>
+  
+    <p></p>
+    <div class="text_center"><h2>Ejemplos SplitDial</h2></div>
+    <div class="card flex justify-content-center">
+      <p-speedDial
+        [model]="items"
+        [visible]="menuVisible"
+        direction="up"
+        type="semi-circle"
+        showIcon="pi pi-bars"
+        [transitionDelay]="100"
+      ></p-speedDial>
+      <button
+        pButton
+        label="Toggle SpeedDial"
+        class="btn"
+        (click)="toggleMenu()"
+      ></button>
+    </div>
+  
+    <div class="card">
+      <div style="height: 350px; position: relative;" class="speeddial-mask-demo">
+          <p-toast />
+          <p-speedDial 
+              [model]="items" 
+              direction="up" 
+              [mask]="true" />
+      </div>
+  </div>
+  </div>
+  
+  <div class="botones">
+    <div class="button-container">
+      <button class="btn" routerLink="/inicio/menu-tareas">Regresar</button>
+    </div>
+  </div>
+  

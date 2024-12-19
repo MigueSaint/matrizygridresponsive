@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule as AngularFormsModule } from '@angular/forms';
 
 import { ButtonModule } from 'primeng/button';
 import { CardModule} from 'primeng/card';
@@ -10,6 +11,11 @@ import { MessageService } from 'primeng/api';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { ToolbarModule } from 'primeng/toolbar';
 import { InputTextModule } from 'primeng/inputtext';
+import { CalendarModule } from 'primeng/calendar';
+import { DropdownModule } from 'primeng/dropdown';
+import { GalleriaModule } from 'primeng/galleria';
+import { CarouselModule } from 'primeng/carousel';
+
 
 import { InicioRoutingModule } from './inicio-routing.module';
 import { MenuTareasComponent } from './menu-tareas/menu-tareas.component';
@@ -33,6 +39,7 @@ import { PagWebComponent } from './pag-web/pag-web.component';
         
   ],
   imports: [
+    AngularFormsModule,
     CommonModule,
     InicioRoutingModule,
     ButtonModule,
@@ -42,7 +49,11 @@ import { PagWebComponent } from './pag-web/pag-web.component';
     ToastModule,
     MultiSelectModule,
     ToolbarModule,
-    InputTextModule
+    InputTextModule,
+    CalendarModule,
+    DropdownModule,
+    GalleriaModule,
+    CarouselModule,
   
   ],
   providers:[
